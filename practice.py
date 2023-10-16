@@ -242,7 +242,7 @@ print(averageNumber)
 print("End Of Python Basic Advance Intermediate\nMove to Python Framework") 
 
 print("==============Even Number (Challange)==============")
-evenNumberList = []
+"""evenNumberList = []
 num1 = int(input("Enter number 1\n"))
 num2 = int(input("Enter number 2\n")) 
 if (num1 % 2 == 0 and num2 % 2 == 0):
@@ -251,8 +251,76 @@ if (num1 % 2 == 0 and num2 % 2 == 0):
     print(evenNumberList) 
     print("even number added")
 else:
-    print("Error, only even number will listed ")
+    print("Error, only even number will listed ") 
+    """
 
+print("============While Loop==========") 
+"""listItems = [] 
+isTrue = True;
+while isTrue:
+    userAsk = input("Continue?")
+    if userAsk == "y" : 
+        number = int(input("Enter number one : \n"))  
+        if (number % 2 == 0) : 
+            listItems.append(number); 
+    else: 
+        print(sorted(listItems))
+        isTrue = False
+       """ 
+
+listItems = []
+countTotal = 0;
+while countTotal < 3:
+    req = int(input(f"{countTotal+1} : Enter a number"))
+    if(req % 2 == 0):
+        listItems.append(req)
+    countTotal = countTotal+1 
+
+print(sorted(listItems))     
+
+print("================For Loop=============")
+numberItems = []
+nums = [1,2,3,2,44,3,4,444,44]
+
+"""for countForLoop in range(3): 
+    req2 = int(input(f"{countForLoop+1} : Enter a number"))
+    if(req2 % 2 == 0):
+        numberItems.append(req2)
+print(numberItems)""" 
+
+for allnuber in nums :
+    if(allnuber % 2 == 0):
+         numberItems.append(allnuber)
+print(numberItems) 
+
+print("============For Loop (Challange) ============")
+numItems = []
+numItems2 = []  
+
+for totalnums in range(1,101):
+    if(totalnums % 2 == 0):
+        numItems.append(totalnums)
+    else:
+        numItems2.append(totalnums)
+print(numItems,'\n',numItems2)  
+
+print("======================password generator (challange)======================")
+import random
+import string
+
+passwordLength = int(input("How many characters in password should be ")) 
+
+pLower = string.ascii_lowercase
+pUpper = string.ascii_uppercase
+pNumber = string.digits
+pSymbols = string.punctuation
+
+pAllPassword = pLower + pUpper + pNumber + pSymbols 
+generatePassword = random.sample(pAllPassword,passwordLength)
+
+passwordGenerate = "".join(generatePassword)
+
+print(passwordGenerate)
 
 
 

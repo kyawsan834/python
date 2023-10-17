@@ -320,7 +320,7 @@ generatePassword = random.sample(pAllPassword,passwordLength)
 
 passwordGenerate = "".join(generatePassword)
 
-print(passwordGenerate)
+print(passwordGenerate) 
 
 
 

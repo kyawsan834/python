@@ -1,0 +1,41 @@
+{% extends "base.html" %} 
+ {% load static %}
+ {%block content%} Shop {%endblock%} 
+{%block robots%}Follow, more{%endblock%} {%block keywords%} Clothes Products
+{%endblock%}
+
+{% block css %}  {% static "products/signup.css" %} {%endblock%}
+
+     {%block title%} Shop {%endblock%} 
+
+{%block body%}   
+
+<!-- ***************** header ***************** -->
+    <img src="image/brand-logo.svg" width="100" alt="myshop logo">
+   {% include "includes/nav.html" %}
+
+    <form>
+    
+        <label for="name">Full Name:</label><br>
+        <input class="field" type="text" id="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input class="field" type="email" id="email" required><br>
+
+        <label for="pass">Password:</label><br>
+        <input class="field" type="password" id="pass" required><br>
+        
+        <input type="checkbox" id="terms"><label for="terms">I agree to the <a href="">terms of use</a>.</label><br>
+
+        <br><br>
+        <button type="submit">Signup</button>
+
+    </form>
+
+
+
+
+
+ 
+
+{%endblock%}
